@@ -1,19 +1,20 @@
 export const personalInfo = {
-  name: 'Nama Anda',
+  name: 'Khairul Zhafar',
   role: 'Full Stack Developer',
   tagline: 'Membangun solusi digital yang berdampak',
   bio: 'Saya adalah seorang pengembang web yang bersemangat dalam menciptakan aplikasi yang indah dan fungsional. Dengan pengalaman dalam pengembangan frontend dan backend, saya siap membantu mewujudkan ide Anda menjadi produk digital yang luar biasa.',
   longBio: `Saya memiliki pengalaman lebih dari 3 tahun dalam pengembangan web full stack. 
 Saya percaya bahwa teknologi yang baik adalah yang mampu menyelesaikan masalah nyata dengan cara yang elegan.
 Fokus utama saya adalah membangun aplikasi yang cepat, responsif, dan mudah digunakan.`,
-  email: 'email@example.com',
+  email: 'khairulzhafar@email.com',
   phone: '+62 812-3456-7890',
   location: 'Jakarta, Indonesia',
+  avatar: 'https://api.dicebear.com/9.x/avataaars/svg?seed=Khairul&backgroundColor=6c63ff',
   social: {
-    github: 'https://github.com/username',
-    linkedin: 'https://linkedin.com/in/username',
-    twitter: 'https://twitter.com/username',
-    instagram: 'https://instagram.com/username',
+    github: 'https://github.com/khairulzhafar',
+    linkedin: 'https://linkedin.com/in/khairulzhafar',
+    twitter: 'https://twitter.com/khairulzhafar',
+    instagram: 'https://instagram.com/khairulzhafar',
   },
   resumeUrl: '#',
 }
