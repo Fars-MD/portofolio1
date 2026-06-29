@@ -1,0 +1,15 @@
+node_modules/
+vendor/
+.env
+.DS_Store
+Thumbs.db
+*.log
+storage/framework/views/*.php
+storage/framework/cache/data/*
+storage/framework/sessions/*
+bootstrap/cache/*
+public/hot
+public/build
+.phpunit.result.cache
+*.swp
+*.swo

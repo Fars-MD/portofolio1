@@ -1,0 +1,29 @@
+<script setup>
+import ParticlesBackground from './components/ParticlesBackground.vue'
+</script>
+
+<template>
+  <ParticlesBackground />
+  <router-view v-slot="{ Component }">
+    <transition name="page" mode="out-in">
+      <component :is="Component" />
+    </transition>
+  </router-view>
+</template>
+
+<style>
+.page-enter-active {
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+.page-leave-active {
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+.page-enter-from {
+  opacity: 0;
+  transform: translateY(20px);
+}
+.page-leave-to {
+  opacity: 0;
+  transform: translateY(-20px);
+}
+</style>
