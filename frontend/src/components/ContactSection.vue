@@ -2,7 +2,6 @@
 import { ref } from 'vue'
 import { useScrollReveal } from '../composables/useScrollReveal'
 import { personalInfo } from '../data/portfolio'
-import axios from 'axios'
 
 useScrollReveal()
 
@@ -14,7 +13,12 @@ const submitForm = async () => {
   isLoading.value = true
   status.value = ''
   try {
-    await axios.post('/api/contact', form.value)
+    const res = await fetch('/api/contact', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(form.value),
+    })
+    if (!res.ok) throw new Error()
     status.value = 'success'
     form.value = { name: '', email: '', subject: '', message: '' }
   } catch {
