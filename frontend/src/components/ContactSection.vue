@@ -9,11 +9,13 @@ const form = ref({ name: '', email: '', subject: '', message: '' })
 const status = ref('')
 const isLoading = ref(false)
 
+const API_URL = import.meta.env.VITE_API_URL || ''
+
 const submitForm = async () => {
   isLoading.value = true
   status.value = ''
   try {
-    const res = await fetch('/api/contact', {
+    const res = await fetch(`${API_URL}/api/contact`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(form.value),
