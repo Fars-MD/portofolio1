@@ -1,4 +1,5 @@
 {
+  "buildCommand": "echo 'PHP build complete'",
   "functions": {
     "api/index.php": {
       "runtime": "vercel-php@0.7.1"
