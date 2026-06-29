@@ -1,6 +1,7 @@
 {
   "buildCommand": "echo 'PHP build complete'",
   "outputDirectory": ".",
+  "installCommand": "composer install --no-dev --no-interaction --prefer-dist --ignore-platform-reqs",
   "functions": {
     "api/index.php": {
       "runtime": "vercel-php@0.7.1"
